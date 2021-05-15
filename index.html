@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .showCode {
+        width: 800px;
+        margin-top: 5px;
+        display: block;
+        font-family: "Courier";
+        background-color: black;
+        color: rgb(96, 199, 247);
+      }
+
+      button {
+        margin-right: 5px;
+        padding: 5px;
+        width: 120px;
+        background-color: teal;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to Problem Solving Session</h1>
+    <h3>
+      Problem :
+      <span id="problem"></span>
+    </h3>
+    <h3>
+      Question :
+      <span id="question"></span>
+    </h3>
+    <div id="addBtn">
+      <button id="fizzBuzz" onclick="fizzBuzzBtn()">Fizz Buzz</button>
+      <button id="reverseString" onclick="reverseStrBtn()">
+        Reverse String
+      </button>
+    </div>
+    <pre>
+    <code class="showCode" id="showCode" onclick="showCodeBtn()"></code>
+  </pre>
+  </body>
+
+  <!-- <script src="javascriptVariables.js"></script> -->
+  <!-- <script src="objectLiterals.js"></script> -->
+  <!-- <script src="javascriptArrays.js"></script> -->
+  <!-- <script src="arrowFunction.js"></script> -->
+  <!-- <script src="constructorFunction.js"></script> -->
+  <!-- <script src="classInJavaScript.js"></script> -->
+  <script src="fizzbuzz.js"></script>
+  <script src="stringReversal.js"></script>
+  <!-- <script src="pallindrome.js"></script> -->
+  <!-- <script src="integerReversal.js"></script> -->
+  <!-- <script src="maxCharacter.js"></script> -->
+</html>
