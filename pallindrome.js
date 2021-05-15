@@ -8,7 +8,7 @@ const palindrome = (str) => {
         reverseString = character + reverseString;
     }
 
-    console.log(`Reverse String : ${reverseString}`);
+    // console.log(`Reverse String : ${reverseString}`);
 
     // 2. Compare the original string with reversed string to check whether it is Pallindrome or not.
     if (str === reverseString) {
