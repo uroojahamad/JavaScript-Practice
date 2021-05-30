@@ -35,7 +35,7 @@ for(let i = 0; i < buttons.length; i++){
 // IIFE() : 
 (function(){
     if(window.localStorage.getItem('value')){
-        window.document.getElementById("enterNumber").innerText = window.localStorage.getItem('Value');
+        window.document.getElementById("enterNumber").innerText = window.localStorage.getItem('value');
         const activeFilter = window.localStorage.getItem('activeFilter');
         for(let i = 0; i < buttons.length; i++){
             if(activeFilter === buttons[i].innerText){
