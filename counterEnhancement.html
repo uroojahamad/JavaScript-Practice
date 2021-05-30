@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <style>
+        .main{
+            margin-top: 50px;
+            width: 50%;
+            height: 300px;
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: pink;
+            box-sizing: border-box;
+            text-align: center;      
+        }
+
+        .container {
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            background-color: #f1f1f1;
+        }
+
+        .count{
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+            border-radius: 50%;
+            background-color: DodgerBlue;
+            color: white;
+            font-size: 25px;
+        }
+
+        span{
+            width: 250px;
+            height: 50px;
+            margin: 10px;
+            /* border-radius: 50%; */
+            background-color: rgb(144, 229, 255);
+            color: black;
+            font-size: 25px;
+            text-align: center;
+            padding: 15px 5px 0px 5px;
+        }
+
+        .flex-container {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #aa4949;
+        }
+
+        .btn {
+            color: black;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px 16px 15px 10px;
+            background-color: rgba(180, 176, 176, 0.795);
+            font-size: 25px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .active, .btn:hover {
+            background-color: rgb(159, 215, 238);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Counter Enhancement</h1>
+        <div class="container">
+            <button class="count" id="addCount" onclick="addCount()">+</button>
+            <span id="enterNumber">0</span>
+            <button class="count" id="subtractCount" onclick="subtractCount()">-</button>
+        </div>
+        
+        <div class="flex-container">
+            <button class="btn" id="button5">5</button>
+            <button class="btn">10</button>
+            <button class="btn">15</button>
+            <button class="btn">20</button>
+        </div>
+    </div>
+      
+
+    <script src="counterEnhancement.js"></script>
+    <!-- <script src="test.js"></script> -->
+</body>
+</html>
