@@ -1,50 +1,21 @@
-//Event Listeners
-document.getElementById("addItemToList").addEventListener("click", addItem);
-document.getElementById("listItem").addEventListener("click", deleteAndStrikeItems);
+const addItemToList = document.getElementById("addItemToList");
+const listItems = document.getElementById("listItem");
 
-let itemArray = [];
+//Event Listener to add items to list
+addItemToList.addEventListener("click", addItem);
 
+const itemArray = [];
 //Function to add item to list
 function addItem(){
     const todoItem = document.getElementById("todoItem").value.trim();
     if(todoItem == ""){
-        return alert("Value can't be blank. Add a todo item");
+        alert("Value can't be blank. Add a todo item");
+        document.getElementById("todoItem").value = "";
+        return ;
     }
     itemArray.unshift(todoItem);
     document.getElementById("todoItem").value = "";
     displayItemList(); 
-}
-
-//Function to Delete and Strike Items
-function deleteAndStrikeItems(e){
-    const tagItem = e.target;
-    
-    //Delete Items from List
-    if(tagItem.classList.contains("deletedItem")){
-        const itemToDelete = tagItem.previousElementSibling.innerText;
-        
-        if(confirm("Do you want to delete this item?")){
-            
-            //Remove elements from an array
-            for (let items in itemArray) {
-                if(itemArray[items] == itemToDelete){
-                    console.log("true");
-                    itemArray.splice(items,1);
-                    console.log(itemArray);
-                }
-            }
-            const deleteTodoItem = tagItem.parentElement;
-            deleteTodoItem.remove();
-        }
-    }
-
-    //Strike Text 
-    if(tagItem.classList.contains("text")){
-        if (tagItem.classList.contains("strikeText")) {
-            return tagItem.classList.remove("strikeText");
-        }
-        tagItem.classList.add("strikeText");
-    }
 }
 
 // Function to display List of Items 
@@ -52,9 +23,29 @@ function displayItemList(){
     let str = "";
     for (let items in itemArray) {
         str += `
-        <li class="list-group-item"><span class="text">${itemArray[items]}</span>
-        <button class="deletedItem"><i class="fa fa-trash"></i>Delete</button>
+        <li class="list-group-item"><button class="text" onclick="strikeItems(this)">${itemArray[items]}</span>
+        <button class="deletedItem" onclick="deleteItem(this)"><i class="fa fa-trash"></i>Delete</button>
         </li> `;
     }
     document.getElementById("listItem").innerHTML = str;
+}
+
+function deleteItem(e){ 
+    const itemToDelete = e.previousElementSibling.innerText;
+    const isConfirm = confirm("Do you want to delete this item?");
+    if(isConfirm){
+        //Remove elements from an array
+        for (let items in itemArray) {
+            if(itemArray[items] == itemToDelete){
+                itemArray.splice(items,1);
+            }
+        }
+        const deleteTodoItem = e.parentElement;
+        deleteTodoItem.remove();
+    }
+
+}
+
+function strikeItems(e){
+    e.classList.toggle("strikeText");
 }
