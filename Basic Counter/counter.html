@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript || Counter</title>
+
+  <style>
+    .count{
+      width: 70px;
+      height: 30px;
+      margin: 5px;
+      border-radius: 15px;
+      background-color: red;
+      color: black;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    input{
+      margin: 5px;
+      width: 250px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h1>Counter</h1>
+  <button class="count" id="addCount" onclick="addCount()">+</button>
+  <input type="number" id="enterNumber" placeholder="0" min="0"/>
+  <button class="count" id="subtractCount" onclick="subtractCount()">-</button>
+</div>
+
+<script src="counter.js"></script>
+</body>
+</html>
+
+<!-- HTML is semantic language , every tag has its own meaning and usage. -->
