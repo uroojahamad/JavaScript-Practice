@@ -86,3 +86,25 @@ function completedItemList(){
     }
     completedListItems.innerHTML = str;
 }
+
+//Function to move completd item to itemlist
+function moveToItemList(e){
+    console.log(e);
+   
+    const itemValue = e.innerText;
+    console.log(itemValue);
+    //Remove elements from an array
+    for (let items in completedItemArray) {
+        if(completedItemArray[items] == itemValue){
+            console.log("true");
+            completedItemArray.splice(items,1);
+            itemArray.push(itemValue);
+        }
+    }
+    // const completedItem = e.parentElement;
+    // completedItem.remove();
+    console.log(itemArray);
+    e.parentElement.remove();
+
+    displayItemList();
+} 
