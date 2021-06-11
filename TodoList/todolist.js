@@ -28,7 +28,7 @@ function displayItemList(){
         <button class="deletedItem" onclick="deleteItem(this)"><i class="fa fa-trash"></i>Delete</button>
         </li> `;
     }
-    document.getElementById("listItem").innerHTML = str;
+    listItems.innerHTML = str;
 }
 
 function deleteItem(e){ 
@@ -76,3 +76,13 @@ function completedItems(e){
 
     }
 
+//display completed list 
+function completedItemList(){
+    let str = "";
+    for (let items in completedItemArray) {
+        str += `
+        <li class="list-group-item"><button class="text strikeText" onclick="moveToItemList(this)">${completedItemArray[items]}</span>
+        </li> `;
+    }
+    completedListItems.innerHTML = str;
+}
