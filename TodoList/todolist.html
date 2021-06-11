@@ -17,9 +17,14 @@
       .container{
         margin-top:50px;
         width: 70%;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding: 10px 5px 20px 40px;
         background-color: lightgray;
+      }
+
+      .subcontainer {
+        width: 95%;
+        padding: 20px 20px 20px 20px;
+        background-color: rgb(187, 85, 85);
       }
 
       .btn {
@@ -75,21 +80,55 @@
         padding-top: 20px;
         padding-bottom: 25px;
       }
+     
+      .d-flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 2px solid black;
+      }
+      
+      .d-flex-column {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgb(223, 17, 137);
+      }
+
+      .task-list {
+        width: 50%;
+        background-color: aquamarine;
+        border: 2px solid black;
+        margin-right: 20px;
+      }
+
+      .completed-list {
+        width: 50%;
+        background-color: lemonchiffon;
+        border: 2px solid black;
+      }
+
+
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1 class="text-center my-4">Todo List</h1>
-      <div class="input-group mb-4">
+    <div class="container d-flex-column">
+      <h1 class="text-center">Todo List</h1>  
+      <div class="subcontainer input-group">
         <input type="text" class="form-control" id="todoItem" placeholder="Add a todo item">
         <button class="btn" id="addItemToList"><i class="fa fa-plus"></i>Add</button>
       </div>
-
-      <div class="list">
-        <ul class="list-group list-group-flush" id="listItem"></ul>
+      <div class="subcontainer d-flex-row">
+        <div class="task-list">
+          <h2>Your Items</h2>
+          <ul class="list-group list-group-flush" id="listItem"></ul>
+        </div>
+        <div class="completed-list">
+          <h2>Completed Items</h2>
+          <ul class="list-group list-group-flush" id="completedListItem"></ul>
+        </div>
       </div>
     </div>
-
+    
     <script src="todolist.js"></script>
   </body>
 </html>
