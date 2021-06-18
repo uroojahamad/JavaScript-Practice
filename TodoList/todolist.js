@@ -44,12 +44,6 @@ function deleteItem(e){
     const itemToDelete = e.previousElementSibling.innerText;
     const isConfirm = confirm("Do you want to delete this item?");
     if(isConfirm){
-        //Remove elements from an array
-        // for (let items in itemArray) {
-        //     if(itemArray[items] == itemToDelete){
-        //         itemArray.splice(items,1);
-        //     }
-        // }
         const filteredArray = itemArray.filter(item =>{
             return item !== itemToDelete;
         });
@@ -58,43 +52,21 @@ function deleteItem(e){
         const deleteTodoItem = e.parentElement;
         deleteTodoItem.remove();
     }
-
 }
 
-//Completed List 
-
 function markItemAsCompleted(e){
-//    console.log(e);
-
     const itemValue = e.innerText;
-    // console.log(itemValue);
-    //Remove elements from an array
-    // for (let items in itemArray) {
-    //     if(itemArray[items] == itemValue){
-    //         console.log("true");
-    //         itemArray.splice(items,1);
-    //         completedItemArray.unshift(itemValue);
-    // }
-    
     const filteredArray = itemArray.filter(item => {
         return item !== itemValue;
     });
 
     itemArray = filteredArray;
-
-    // completedItemArray.unshift(itemValue);
-   
     completedItemArray = [itemValue, ...completedItemArray];
-    // const completedItem = e.parentElement;
-    // completedItem.remove();
-    // console.log(completedItemArray);
     e.parentElement.remove();
-
     displayCompletedItems();
 
     }
 
-//display completed list 
 function displayCompletedItems(){
     let str = "";
     for (let items in completedItemArray) {
@@ -111,37 +83,13 @@ function displayCompletedItems(){
 
 //Function to move completd item to itemlist
 function moveToItemList(e){
-    console.log(e);
-   
     const itemValue = e.innerText;
-    console.log(itemValue);
-    //Remove elements from an array
-    // for (let items in completedItemArray) {
-    //     if(completedItemArray[items] == itemValue){
-    //         console.log("true");
-    //         completedItemArray.splice(items,1);
-    //         itemArray.push(itemValue);
-    //     }
-    // }
-
     const filteredArray = completedItemArray.filter(item =>{
        return item !==  itemValue;
     });
 
     completedItemArray = filteredArray;
     itemArray = [...itemArray,itemValue];
-
-    // const completedItem = e.parentElement;
-    // completedItem.remove();
-    console.log(itemArray);
     e.parentElement.remove();
-
     displayItemList();
 } 
-
-
-/*
- * We are running display item function when we are changing array.
- * kya changes kaise hua step by step : imperative
- * kya change hoga and kb hoga : declarative(React principle): render
- */
