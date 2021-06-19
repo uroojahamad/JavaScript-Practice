@@ -1,4 +1,4 @@
-console.log("Analgrams");
+console.log("Anagrams");
 
 const str1 = "Hello";
 console.log(`String 1 : ${str1}`);
