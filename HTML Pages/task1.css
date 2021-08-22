@@ -1,0 +1,33 @@
+.container{
+    margin-top:30px;
+    width: 35%;
+    padding: 15px 5px 15px 25px;
+    margin-left: 410px;
+    background-color: rgb(233, 229, 229);
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(223, 17, 137);
+}
+
+img{
+    width: 450px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+hr{
+    border-color: black;
+}
+
+button{
+    width: 130px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: rgb(236, 60, 54);
+    padding: 10px 10px 10px 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
