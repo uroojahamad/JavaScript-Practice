@@ -1,0 +1,14 @@
+.container{
+    margin-top:30px;
+    width: 45%;
+    padding: 15px 25px 15px 25px;
+    margin-left: 325px;
+    background-color: rgb(233, 229, 229);
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(223, 17, 137);
+    justify-content: space-between;
+}
