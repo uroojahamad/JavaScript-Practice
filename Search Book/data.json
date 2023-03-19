@@ -1,0 +1,44 @@
+[
+    {
+      "id": "1",
+      "title": "Turtles all the way down",
+      "author": "John Green",
+      "year": 2017,
+      "genre": "Romance"
+    },
+    {
+      "id": "2",
+      "title": "Looking for Alaska",
+      "author": "John Green",
+      "year": 2015,
+      "genre": "Fiction"
+    },
+    {
+      "id": "3",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "year": 2016,
+      "genre": "Non Fiction"
+    },
+    {
+      "id": "4",
+      "title": "So Good They Can't Ignore You",
+      "author": "Cal Newport",
+      "year": 2012,
+      "genre": "Non Fiction"
+    },
+    {
+      "id": "5",
+      "title": "Keep Going",
+      "author": "Auntin Kleon",
+      "year": 2019,
+      "genre": "Self Growth"
+    },
+    {
+      "id": "6",
+      "title": "Show Your Work!",
+      "author": "Auntin Kleon",
+      "year": 2014,
+      "genre": "Non Fiction"
+    }
+]
