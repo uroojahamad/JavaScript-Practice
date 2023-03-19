@@ -29,3 +29,17 @@ multiplyByTwo(5);
 
 const multiplyByThree = multiply(3);
 multiplyByThree(5);
+
+// const add = (a, b) =>{
+//     console.log(a + b);
+// }
+// add(5, 5);
+
+const add = (x) => {
+    return (y) =>{
+        console.log(x + y)
+    }
+}
+
+// one liner for above : const add = (x) => (y) => console.log(x + y)
+add(6)(6);
