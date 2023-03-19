@@ -1,4 +1,4 @@
-console.log("Call Apply Bind Method");
+console.log("Call Method");
 
 //Example 1: 
 const person = {
@@ -29,4 +29,3 @@ const printName = function() {
 }
 printName.call(person)
 printName.call(person2)
-
