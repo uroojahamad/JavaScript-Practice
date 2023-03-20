@@ -8,7 +8,6 @@
 
 .d-flex-row {
     display: flex;
-    flex-direction: row;
     border: 2px solid rgb(223, 17, 137);
     justify-content: space-between;
 }
