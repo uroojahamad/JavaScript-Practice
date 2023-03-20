@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            min-width: 100px;
+            min-height: 100px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Advance Javascript</h1>
-    <script src="functionCurring.js"></script>
+
+    <div id="grandparent">
+        <span>Grand Parent div</span>
+        <div id="parent">
+            <span>Parent div</span>
+            <div id="child">
+                <span>Child div</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="functionCurring.js"></script> -->
+    <!-- <script src="callmethod.js"></script> -->
+    <!-- <script src="applymethod.js"></script> -->
+    <!-- <script src="bindmethod.js"></script> -->
+    <!-- <script src="pollyFillForBindMethod.js"></script> -->
+    <script src="eventBubblingAndCapturing.js"></script>
 </body>
 </html>
