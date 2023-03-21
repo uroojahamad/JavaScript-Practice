@@ -43,3 +43,13 @@ const add = (x) => {
 
 // one liner for above : const add = (x) => (y) => console.log(x + y)
 add(6)(6);
+
+const sum = (a) =>{
+    return (b) =>{
+        return (c) =>{
+            return a + b + c
+        }
+    }
+}
+
+console.log(sum(1)(2)(3));
