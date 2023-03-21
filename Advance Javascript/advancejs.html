@@ -12,11 +12,15 @@
             border: 1px solid black;
             padding: 20px;
         }
+        li{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <h1>Advance Javascript</h1>
 
+    <!-- Example for Event Bubbling, capturing -->
     <div id="grandparent">
         <span>Grand Parent div</span>
         <div id="parent">
@@ -27,11 +31,29 @@
         </div>
     </div>
 
+    <!-- Example for Event Deligation -->
+    <div>
+        <ul id="categories">
+            <li id="laptops">Laptops</li>
+            <li id="shoes">Shoes</li>
+            <li id="shirts">Shirts</li>
+        </ul>
+    </div>
+
+    <div id="forms">
+        <input type="text" id="firstname" data-uppercase>
+        <input type="text" id="lastname">
+        <input type="text" id="city" data-uppercase>
+    </div>
+    
+    
     <!-- <script src="functionCurring.js"></script> -->
     <!-- <script src="callmethod.js"></script> -->
     <!-- <script src="applymethod.js"></script> -->
     <!-- <script src="bindmethod.js"></script> -->
     <!-- <script src="pollyFillForBindMethod.js"></script> -->
-    <script src="eventBubblingAndCapturing.js"></script>
+    <!-- <script src="eventBubblingAndCapturing.js"></script> -->
+    <!-- <script src="eventDeligation.js"></script> -->
+    <script src="prototypeInheritance.js"></script>
 </body>
 </html>
