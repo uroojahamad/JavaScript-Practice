@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;900&family=Lobster&family=Lobster+Two:ital@0;1&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+  }
+  #main {
+    height: 800px;
+    width: 700px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#4E82EC, #55B3A8);
+  }
+
+  .pricing-box{
+    width: 440px;
+    height: 620px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    padding: 30px;
+    margin: 20px;
+    position: relative;
+  }
+
+  .pricing-box .heading{
+    color: #845EED;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  .price-tag{
+    font-weight: bolder;
+    font-size: 3rem;
+    color:rgb(70, 68, 68);
+  }
+
+.description{
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+svg{
+    width: 20px;
+    height: 15px;
+}
+
+.signupbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  width: 400px;
+  height: 60px;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+}
+
+.badge{
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+.badge1{
+  width: 135px;
+  height: 22px;
+  text-align: center;
+  background-color: #5EC269;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.badge2{
+  width: 80px;
+  height: 22px;
+  text-align: center;
+  background-color: #E2B53E;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
