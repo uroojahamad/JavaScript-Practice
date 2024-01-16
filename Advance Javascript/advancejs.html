@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        div{
-            min-width: 100px;
-            min-height: 100px;
-            border: 1px solid black;
-            padding: 20px;
-        }
-        li{
-            cursor: pointer;
-        }
+      div {
+        min-width: 100px;
+        min-height: 100px;
+        border: 1px solid black;
+        padding: 20px;
+      }
+      li {
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Advance Javascript</h1>
 
     <!-- Example for Event Bubbling, capturing -->
     <div id="grandparent">
-        <span>Grand Parent div</span>
-        <div id="parent">
-            <span>Parent div</span>
-            <div id="child">
-                <span>Child div</span>
-            </div>
+      <span>Grand Parent div</span>
+      <div id="parent">
+        <span>Parent div</span>
+        <div id="child">
+          <span>Child div</span>
         </div>
+      </div>
     </div>
 
     <!-- Example for Event Deligation -->
     <div>
-        <ul id="categories">
-            <li id="laptops">Laptops</li>
-            <li id="shoes">Shoes</li>
-            <li id="shirts">Shirts</li>
-        </ul>
+      <ul id="categories">
+        <li id="laptops">Laptops</li>
+        <li id="shoes">Shoes</li>
+        <li id="shirts">Shirts</li>
+      </ul>
     </div>
 
     <div id="forms">
-        <input type="text" id="firstname" data-uppercase onkeyup="search()">
-        <input type="text" id="lastname">
-        <input type="text" id="city" data-uppercase>
+      <input
+        type="text"
+        id="firstname"
+        data-uppercase
+        onkeyup="betterExperience()"
+      />
+      <input type="text" id="lastname" />
+      <input type="text" id="city" data-uppercase />
     </div>
-    
+
     <button id="btn">Rsize</button>
-    
-    <!-- <script src="functionCurring.js"></script> -->
+
+    <script src="functionCurring.js"></script>
     <!-- <script src="callmethod.js"></script> -->
     <!-- <script src="applymethod.js"></script> -->
     <!-- <script src="bindmethod.js"></script> -->
@@ -56,8 +61,8 @@
     <!-- <script src="eventBubblingAndCapturing.js"></script> -->
     <!-- <script src="eventDeligation.js"></script> -->
     <!-- <script src="prototypeInheritance.js"></script> -->
-    <!-- <script src="throttling.js"></script> -->i
+    <!-- <script src="throttling.js"></script> -->
     <!-- <script src="recursion.js"></script> -->
-    <script src="debouncing.js"></script>
-</body>
+    <!-- <script src="debouncing.js"></script> -->
+  </body>
 </html>

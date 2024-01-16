@@ -1,0 +1,83 @@
+.parent {
+  border: 1px solid #f9f9f9;
+  border-radius: 12px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+.second-child {
+  border: 1px solid #f9f9f9;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  outline: 1px;
+  outline-color: #f9f9f9;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.inner-child {
+  display: flex;
+  position: relative;
+  gap: 8px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+hr {
+  border-top: 1px solid #f9f9f9 !important;
+  width: 100%;
+}
+
+.text-logo {
+  padding: 8px;
+  background-color: #7555f6;
+  margin-left: 5px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.text-logo2 {
+  background-color: #ffffff;
+  color: #63a98d;
+}
+
+.text {
+  width: 100%;
+}
+
+span {
+  color: #9b8e8d;
+}
+
+.expand {
+  position: absolute;
+  font-size: xx-large;
+  right: 1px;
+  top: 3px;
+  transform: rotate(90deg);
+}
+
+.metrics-textbox {
+  border-radius: 5px;
+  border: 1px solid #f9f8fe;
+  background-color: #f9f8fe;
+  padding: 5px;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: xx-large;
+}
